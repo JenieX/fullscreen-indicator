@@ -29,19 +29,17 @@ const metadata = {
      * if the word `Greasemonkey` is mentioned in one of the keys, at
      * the `compatible` section.
      */
-    'GM_getValue',
-    'GM_setValue',
-    'GM_xmlhttpRequest',
-    'GM_setClipboard',
+    // 'GM_getValue',
+    // 'GM_setValue',
+    // 'GM_xmlhttpRequest',
+    // 'GM_setClipboard',
   ],
-  'run-at': 'document-start',
+  'run-at': 'document-end',
   noframes: '',
   compatible: [
     //
-    'edge Tampermonkey or Violentmonkey',
-    'firefox Greasemonkey, Tampermonkey or Violentmonkey',
-    'chrome Tampermonkey or Violentmonkey',
-    'opera Tampermonkey or Violentmonkey',
+    'edge Violentmonkey',
+    'chrome Violentmonkey',
   ],
   supportURL: `https://github.com/${author}/${name}/issues`,
   homepageURL: `https://github.com/${author}/${name}`,
@@ -53,7 +51,7 @@ const metadata = {
 };
 
 const metadataDev = { ...metadata };
-metadataDev.name += '  [DEV]';
+metadataDev.name += ' [DEV]';
 metadataDev.version = '0.0.0';
 metadataDev.icon = `https://github.com/${author}/${name}/blob/main/src/icons/dev.png?raw=true`;
 

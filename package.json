@@ -1,7 +1,7 @@
 {
-  "name": "userscript-gulp-template",
+  "name": "fullscreen-indicator",
   "version": "0.0.1",
-  "description": "User script template that acts as module and tries to simulate imports",
+  "description": "Detect fullscreen view and append [FS] to the window title",
   "author": "JenieX",
   "main": "src/index.js",
   "scripts": {
